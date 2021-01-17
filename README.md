@@ -76,6 +76,7 @@ pressure_sensor = {
     "required": ["temperature", "timestamp"]
 }
 ```
+
 - To send your event to the pipeline, you must use an mqtt publisher. The mqtt topic must be in **events/<schema_name>** format. For example, if you defined your schema as **temp_sensor** in your **event_schemas.py** file, then **events/temp_sensor** must be the topic to publish to. Note that the event's payload must be **json formatted string**.
 <br />
 Here is an example publisher:
@@ -98,6 +99,7 @@ data = {
 formatted_data = json.dumps(data)
 client.publish(topic, formatted_data, qos=0)
 ```
+
 ##  Where are the events stored?
 - If the events are compatible with their pre-defined schemas, they are stored on your MongoDB under **events** database. The name of the collections they are inserted into are the same as the name of the schema. For example, if an event's schema name is **temp_sensor**, it is inserted under the collection with the name **temp_sensor**.
 
