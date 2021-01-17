@@ -73,7 +73,7 @@ pressure_sensor = {
         }
     },
     "additionalProperties": False,
-    "required": ["temperature", "timestamp"]
+    "required": ["pressure", "timestamp"]
 }
 ```
 
