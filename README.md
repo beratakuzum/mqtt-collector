@@ -42,8 +42,8 @@ If you see **MQTT Connection Successful** in console logs, that means you are su
 ##  How to define an event schema and send data to the pipeline?
 - To define your json schemas to validate your events, put your schemas one under the other as dictionaries in json-schema format in **event_schemas.py** file  which is in the project's top folder.
 <br />
- ```
-python
+
+ ```python
 # example event_schemas.py file
 temp_sensor = {
     "$schema": "http://json-schema.org/schema#",
