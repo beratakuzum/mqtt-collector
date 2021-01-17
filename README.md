@@ -105,6 +105,6 @@ client.publish(topic, formatted_data, qos=0)
 - If the events are compatible with their pre-defined schemas, they are stored on your MongoDB under **events** database. The name of the collections they are inserted into are the same as the name of the schema. For example, if an event's schema name is **temp_sensor**, it is inserted under the collection with the name **temp_sensor**.
 
 ## TODO
-- Rest api to define schemas.
-- Authentication.
+- Rest api to define event schemas instead of hard-coding them in a file..
+- Authentication.<br />
 ...
