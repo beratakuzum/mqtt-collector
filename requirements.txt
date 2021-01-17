@@ -1,0 +1,8 @@
+APScheduler==3.6.3
+fastjsonschema==2.14.5
+paho-mqtt==1.5.1
+pymongo==3.11.2
+python-dotenv==0.15.0
+pytz==2020.5
+six==1.15.0
+tzlocal==2.1
