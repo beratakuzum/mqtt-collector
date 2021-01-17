@@ -80,6 +80,7 @@ pressure_sensor = {
 - To send your event to the pipeline, you must use an mqtt publisher. The mqtt topic must be in **events/<schema_name>** format. For example, if you defined your schema as **temp_sensor** in your **event_schemas.py** file, then **events/temp_sensor** must be the topic to publish to. Note that the event's payload must be **json formatted string**.
 <br />
 Here is an example publisher:
+
 ```python
 """An example event publisher"""
 import json
